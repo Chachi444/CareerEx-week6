@@ -134,10 +134,14 @@ app.get('/drugs/non-prescription', (req, res) => {
   });
 
 /*POST /drugs/manufacturer-count. Accept a manufacturer in the body and return how many drugs are produced by that manufacturer.*/
-app.post('/drugs/manufacturer-count', (req, res) => {
-    const manufacturer = req.body.manufacturer;
-   const count = drugs.filter(drug => drug.manufacturer === manufacturer).length;
-    res.send({ manufacturer: manufacturer, count: count });
+app.post("/drugs/manufacturerCount", (req, res)=>{
+  const { manufacturer } = req.body
+  const manufacturerCount = drugs.filter((each) =>{
+    return each.manufacturer === manufacturer
+  })
+  res.json({
+    count: manufacturerCount.length, manufacturer
+  })
 });
   /*GET /drugs/count-analgesics
 
