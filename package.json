@@ -1,0 +1,23 @@
+{
+  "name": "careerex-week6",
+  "version": "1.0.0",
+  "description": "Node.js Express API Assignment",
+  "main": "CareerEx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chachi444/CareerEx-week6.git"
+  },
+  "keywords": [],
+  "author": "Charity Okechukwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chachi444/CareerEx-week6/issues"
+  },
+  "homepage": "https://github.com/Chachi444/CareerEx-week6#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
